@@ -1,0 +1,45 @@
+{
+	"AWSTemplateFormatVersion": "2010-09-09",
+	"Description": "RTC Application",
+	"Mappings": {
+	},
+	"Outputs": {
+	},
+	"Parameters": {
+		"Application": {
+			"Description": "Name of application for naming and DNS.",
+			"Type": "String"
+		},
+		"Branch": {
+			"Description": "Git branch",
+			"Type": "String"
+		},
+		"BuildNumber": {
+			"Description": "Bamboo build number",
+			"Type": "String"
+		},
+		"HostedZone": {
+			"Description": "Route53 hosted zone.",
+			"Type": "String"
+		},
+		"KeyName": {
+			"Description": "Name of an existing EC2 KeyPair to enable SSH access to the instances",
+			"Type": "String"
+		},
+		"NetworkSecurityEnv": {
+			"Default": "dev",
+			"Description": "Network & Security environmet",
+			"Type": "String"
+		},
+		"Product": {
+			"Description": "Tag for Product",
+			"Type": "String"
+		},"Bucket": {
+			"Description": "Base Bucket",
+			"Type": "String"
+		}
+	},
+	"Resources": {
+	}
+}
+
